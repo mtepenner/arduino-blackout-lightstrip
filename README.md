@@ -57,8 +57,6 @@ To make the system safe and to connect the logic board to the grid monitor, you 
 * Connect and solder a 22 AWG solid core wire to the 3.3V center of your voltage divider. 
 * Solder the other end of this 22 AWG wire to Pin 2 (`GRID_MONITOR_PIN`) on the ESP32.
 
-Here is the corrected Step 3, incorporating the 12V-to-5V Buck Converter to properly power the logic level shifter and ensure the MOSFET fully saturates.
-
 ### **3. Assembling the Control Circuit (Buck Converter, Logic Level Shifter & MOSFET)**
 * *Note: A 12V-to-5V Buck Converter and a 3.3V to 5V Logic Level Shifter are added here to properly step up the ESP32's signal. This ensures the MOSFET fully saturates to handle the high current of the LED strips safely.*
 * Tap into the 12V power line (after the inline fuse) and solder wires to the `IN+` and `IN-` terminals of the 12V-to-5V Buck Converter.
